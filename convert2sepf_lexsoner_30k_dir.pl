@@ -24,14 +24,15 @@ while(<SFILE>){
 # check Qpart en Ppart en als beide een woord in het CGN lexicon bevatten, scrijf ze dan ieder naar een file in een directory.
 #WR-P-P-G-0000517484.p.7.s.2.w.10	NORM	natuurlijk spelen de tijd niet in ons voordeel ,	++want++	 het aantal spelen wedstrijd worden almaar groot .
 
-$infile ="/vol/bigdata/users/ihendrickx/ExpLSA/Inspectie/sonarnews100K.wantQP.splitQP.txt";
-$outdir = "/vol/tensusers/ihendrickx/Data/LSA/R_Sonar/sonar_10knews/vocab_top$nsize/wantQP";
-$nameT="wantQP";
+#$infile ="/vol/bigdata/users/ihendrickx/ExpLSA/Inspectie/sonarnews100K.wantQP.splitQP.txt";
+#$outdir = "/vol/tensusers/ihendrickx/Data/LSA/R_Sonar/sonar_10knews/vocab_top$nsize/wantQP";
+#$nameT="wantQP";
 
 
-#$infile ="/vol/bigdata/users/ihendrickx/ExpLSA/Inspectie/sonarnews100K.omdatQP.splitQP.check.txt";
-#$outdir = "/vol/tensusers/ihendrickx/Data/LSA/R_Sonar/sonar_10knews/vocab_top10k/omdatQP";
-#$nameT="omdatQP";
+$infile ="/vol/bigdata/users/ihendrickx/ExpLSA/Inspectie/sonarnews100K.omdatQP.splitQP.check.txt";
+$outdir = "/vol/tensusers/ihendrickx/Data/LSA/R_Sonar/sonar_10knews/vocab_top$nsize/omdatQP";
+$nameT="omdatQP";
+
 $teller=0;
 open(FILE, "<:encoding(UTF-8)",$infile) || die " help";
 while(<FILE>)
